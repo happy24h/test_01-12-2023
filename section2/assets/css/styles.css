@@ -1,0 +1,123 @@
+:root {
+    --primary: #ee4d2d;
+    --text-color: #333;
+}
+body {
+    width: 100%;
+    padding: 66px 242px 66px 295px; 
+    height: 1260px;
+    font-family: 'Instrument Serif', serif;
+    font-family: 'Inter', sans-serif;
+    background: #FFF9F5;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 76px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 117px;
+
+}
+
+.title {
+    font-family: Instrument Serif;
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 61px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #462B20;
+
+}
+.content-left {
+    margin-top: 130px;
+    width: 560px;
+    height: 691px;
+}
+
+.content-left > img {
+    width: 560px;
+    height: 315px;
+    margin-bottom: 24px;
+}
+
+.content-right {
+    width: 706px;
+    height: 991px;
+}
+
+/* accordion */
+.accordion {
+    max-width: 100%;
+}
+
+.accordion .contentBx {
+    position: relative;
+}
+
+.accordion .contentBx:first-child {
+    border-top: 1px solid #F3EAE5;
+}
+
+.accordion .contentBx .label {
+    position: relative;
+    cursor: pointer;
+    font-family: Instrument Serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #462B20;
+}
+
+.accordion .contentBx .label::before {
+    content:url('../imgs/chevron-down.svg');
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-42%);
+}
+
+.accordion .contentBx.active .label::before{
+    content:url('../imgs/chevron-down.svg');
+}
+
+.accordion .contentBx .content {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+     /* //styleName: Body/15px/Subtle; */
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #42291F;
+    border-bottom: 1px solid #F3EAE5;
+}
+
+.accordion .contentBx.active .content {
+    min-height: 130px;
+}
+
+@media (max-width: 1730px) {
+    body{
+        display: flex;
+        justify-content: center;
+        padding: 66px 0px 66px 0px; 
+    }
+    
+}
