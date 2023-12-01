@@ -115,8 +115,6 @@ body {
 
 @media (max-width: 1730px) {
     body{
-        display: flex;
-        justify-content: center;
         padding: 66px 0px 66px 0px; 
     }
     
