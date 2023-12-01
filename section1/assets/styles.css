@@ -53,17 +53,18 @@ body {
     flex-wrap: wrap;
     gap: 23px;
     /* height: 100%; */
+    /* border: 1px solid #ccc; */
 
 }
 .item-courses {
-    width: calc(25% - 23px);
+    width: calc(25% - 69px / 4);
     /* border: 1px solid red; */
     height: 100%;
 
 }
-.item-courses:first-child {
+/* .item-courses:first-child {
     width: 25%;
-}
+} */
 
 .item-courses > img {
     width: 100%;
