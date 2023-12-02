@@ -45,7 +45,7 @@ body {
 }
 
 .content-left > img {
-    width: 560px;
+    width: 100%;
     height: 315px;
     margin-bottom: 24px;
 }
@@ -116,6 +116,22 @@ body {
 @media (max-width: 1730px) {
     body{
         padding: 66px 0px 66px 0px; 
+    }
+    
+}
+
+@media (max-width: 1390px) {
+    .main {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .content-left {
+        width: 40%;
+    }
+
+    .content-right {
+        width: calc(60% - 117px);
     }
     
 }
