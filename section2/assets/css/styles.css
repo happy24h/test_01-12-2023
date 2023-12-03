@@ -25,7 +25,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     gap: 117px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
 }
 
@@ -154,7 +154,8 @@ body {
 @media (max-width: 740px) {
 
     .container {
-        gap: 0px;    
+        gap: 0px;  
+        flex-wrap: wrap;  
     }
 
     .content-left {
