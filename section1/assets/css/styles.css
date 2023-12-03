@@ -148,15 +148,21 @@ body {
     text-align: left;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1350px) {
     body {
         padding: 70px 50px 30px 50px;
     }
 }
 
-@media(max-width: 950px) {
+@media(max-width: 1050px) {
     body {
         padding: 70px 25px 30px 25px;
+    }
+
+    .item-courses {
+        width: calc(50% - 23px / 2);
+        height: auto;
+        margin-bottom: 20px;
     }
 }
 

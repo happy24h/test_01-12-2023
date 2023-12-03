@@ -25,6 +25,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     gap: 117px;
+    flex-wrap: wrap;
 
 }
 
@@ -122,7 +123,6 @@ body {
 
 @media (max-width: 1390px) {
     .main {
-        width: 1200px;
         margin: 0 auto;
     }
 
@@ -134,4 +134,35 @@ body {
         width: calc(60% - 117px);
     }
     
+}
+
+@media (max-width: 1050px) {
+   
+    .container {
+        gap: 40px;    
+    }
+    .content-left {
+        width: 40%;
+    }
+
+    .content-right {
+        width: calc(60% - 40px);
+    }
+    
+}
+
+@media (max-width: 740px) {
+
+    .container {
+        gap: 0px;    
+    }
+
+    .content-left {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .content-right {
+        width: 100%;
+    }
 }
